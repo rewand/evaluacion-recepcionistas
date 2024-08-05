@@ -1,8 +1,5 @@
 <?php
-
-use Illuminate\Support\Facades\Route;
-use App\Http\Controllers\Api\V1\RecepcionistaController;
-use App\Http\Controllers\Api\V1\EvaluacionController;
+use App\Http\Controllers\AuthController;
 
 Route::prefix('v1')->group(function () {
     // Rutas para Recepcionista
@@ -11,10 +8,14 @@ Route::prefix('v1')->group(function () {
     Route::delete('recepcionistas/{id}', 'Api\V1\RecepcionistaController@destroy');
 
     // Rutas para Evaluacion
-
     Route::resource('evaluaciones', 'Api\V1\EvaluacionController');
-
-    // Métodos específicos adicionales si es necesario
-    Route::post('evaluaciones/{id}', [EvaluacionController::class, 'update']);
-    Route::delete('evaluaciones/{id}', [EvaluacionController::class, 'destroy']);
+    Route::post('evaluaciones/{id}', 'Api\V1\EvaluacionController@update');
+    Route::delete('evaluaciones/{id}', 'Api\V1\EvaluacionController@destroy');
 });
+
+// Rutas de autenticación
+Route::post('register', [AuthController::class, 'register']);
+Route::post('login', [AuthController::class, 'login']);
+
+Route::middleware('auth:sanctum')->get('user', [AuthController::class, 'user']);
+
