@@ -8,6 +8,7 @@ $baseDir = dirname($vendorDir);
 return array(
     'App\\Http\\Controllers\\Api\\V1\\EvaluacionController' => $baseDir . '/app/Http/Controllers/Api/V1/EvaluacionController.php',
     'App\\Http\\Controllers\\Api\\V1\\RecepcionistaController' => $baseDir . '/app/Http/Controllers/Api/V1/RecepcionistaController.php',
+    'App\\Http\\Controllers\\AuthController' => $baseDir . '/app/Http/Controllers/AuthController.php',
     'App\\Http\\Controllers\\Controller' => $baseDir . '/app/Http/Controllers/Controller.php',
     'App\\Models\\Evaluacion' => $baseDir . '/app/Models/Evaluacion.php',
     'App\\Models\\Recepcionista' => $baseDir . '/app/Models/Recepcionista.php',
@@ -135,6 +136,7 @@ return array(
     'Cron\\MonthField' => $vendorDir . '/dragonmantank/cron-expression/src/Cron/MonthField.php',
     'Database\\Factories\\UserFactory' => $baseDir . '/database/factories/UserFactory.php',
     'Database\\Seeders\\DatabaseSeeder' => $baseDir . '/database/seeders/DatabaseSeeder.php',
+    'Database\\Seeders\\UserSeeder' => $baseDir . '/database/seeders/UserSeeder.php',
     'DateError' => $vendorDir . '/symfony/polyfill-php83/Resources/stubs/DateError.php',
     'DateException' => $vendorDir . '/symfony/polyfill-php83/Resources/stubs/DateException.php',
     'DateInvalidOperationException' => $vendorDir . '/symfony/polyfill-php83/Resources/stubs/DateInvalidOperationException.php',

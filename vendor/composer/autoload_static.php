@@ -515,6 +515,7 @@ class ComposerStaticInita1e9294296018ea82fa6ff54a4470cb2
     public static $classMap = array (
         'App\\Http\\Controllers\\Api\\V1\\EvaluacionController' => __DIR__ . '/../..' . '/app/Http/Controllers/Api/V1/EvaluacionController.php',
         'App\\Http\\Controllers\\Api\\V1\\RecepcionistaController' => __DIR__ . '/../..' . '/app/Http/Controllers/Api/V1/RecepcionistaController.php',
+        'App\\Http\\Controllers\\AuthController' => __DIR__ . '/../..' . '/app/Http/Controllers/AuthController.php',
         'App\\Http\\Controllers\\Controller' => __DIR__ . '/../..' . '/app/Http/Controllers/Controller.php',
         'App\\Models\\Evaluacion' => __DIR__ . '/../..' . '/app/Models/Evaluacion.php',
         'App\\Models\\Recepcionista' => __DIR__ . '/../..' . '/app/Models/Recepcionista.php',
@@ -642,6 +643,7 @@ class ComposerStaticInita1e9294296018ea82fa6ff54a4470cb2
         'Cron\\MonthField' => __DIR__ . '/..' . '/dragonmantank/cron-expression/src/Cron/MonthField.php',
         'Database\\Factories\\UserFactory' => __DIR__ . '/../..' . '/database/factories/UserFactory.php',
         'Database\\Seeders\\DatabaseSeeder' => __DIR__ . '/../..' . '/database/seeders/DatabaseSeeder.php',
+        'Database\\Seeders\\UserSeeder' => __DIR__ . '/../..' . '/database/seeders/UserSeeder.php',
         'DateError' => __DIR__ . '/..' . '/symfony/polyfill-php83/Resources/stubs/DateError.php',
         'DateException' => __DIR__ . '/..' . '/symfony/polyfill-php83/Resources/stubs/DateException.php',
         'DateInvalidOperationException' => __DIR__ . '/..' . '/symfony/polyfill-php83/Resources/stubs/DateInvalidOperationException.php',
